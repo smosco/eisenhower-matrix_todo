@@ -9,6 +9,9 @@ export function TodosProvider({ children }) {
     setTodos(todos.map((t) => (t.id === updated.id ? updated : t)));
   const handleDelete = (deleted) =>
     setTodos(todos.filter((t) => t.id !== deleted.id));
+  const handleEdit = (edited) => {
+    setTodos(todos.map((item) => (item.id === edited.id ? edited : item)));
+  };
   // const toggleDarkMode = () => {
   //   setDarkMode((prev) => !prev); //(!darkMode)
   //   updateDarkMode(!darkMode);
@@ -32,7 +35,7 @@ export function TodosProvider({ children }) {
 
   return (
     <TodosContext.Provider
-      value={{ todos, handleAdd, handleUpdate, handleDelete }}
+      value={{ todos, handleAdd, handleUpdate, handleDelete, handleEdit }}
     >
       {children}
     </TodosContext.Provider>

@@ -6,7 +6,7 @@ import { useTodos } from "../../context/TodosContext";
 export default function IU({ filter }) {
   // const [todos, setTodos] = useState(() => readTodosFromLocal());
 
-  const { todos, handleUpdate, handleDelete } = useTodos();
+  const { todos, handleUpdate, handleDelete, handleEdit } = useTodos();
 
   // const handleUpdate = (updated) =>
   //   setTodos(todos.map((t) => (t.id === updated.id ? updated : t)));
@@ -31,6 +31,7 @@ export default function IU({ filter }) {
             todo={item}
             onUpdate={handleUpdate}
             onDelete={handleDelete}
+            onEdit={handleEdit}
           ></Todo>
         ))}
       </ul>

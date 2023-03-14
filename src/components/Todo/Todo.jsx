@@ -1,8 +1,9 @@
 import React from "react";
 import { FaTrashAlt } from "react-icons/fa";
 import styles from "./Todo.module.css";
+import { EditTodoForm } from "../EditTodoForm/EditTodoForm";
 
-export default function Todo({ todo, onUpdate, onDelete }) {
+export default function Todo({ todo, onUpdate, onDelete, onEdit }) {
   const { id, text, status } = todo;
   const handleDelete = () => {
     // console.dir(todo);
@@ -21,9 +22,10 @@ export default function Todo({ todo, onUpdate, onDelete }) {
           onUpdate({ ...todo, status });
         }}
       />
-      <label htmlFor={id} className={styles.text}>
+      {/* <label htmlFor={id} className={styles.text}>
         {text}
-      </label>
+      </label> */}
+      <EditTodoForm todo={todo} onEdit={onEdit} />
       <button onClick={handleDelete} className={styles.button}>
         <FaTrashAlt />
       </button>
