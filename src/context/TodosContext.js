@@ -23,8 +23,11 @@ export function TodosProvider({ children }) {
   //   updateDarkMode(isDark);
   // }, []);
   useEffect(() => {
-    localStorage.setItem("todos", JSON.stringify(todos));
+    //console.log("first", JSON.parse(localStorage.getItem("todos")));
+    //localStorage.setItem("todos", JSON.stringify(todos));
+    console.log("내가 지금 set함");
     setTodos(JSON.parse(localStorage.getItem("todos")));
+    //console.log("after", todos);
   }, []);
 
   return (

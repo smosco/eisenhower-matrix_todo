@@ -18,6 +18,7 @@ export default function INU({ filter }) {
   console.log("inu", inu);
 
   useEffect(() => {
+    console.log("내가 지금 로컬에 저장함");
     localStorage.setItem("todos", JSON.stringify(todos));
     //setTodos(JSON.parse(localStorage.getItem("todos")));
   }, [todos]);
