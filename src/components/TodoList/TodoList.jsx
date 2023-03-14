@@ -37,7 +37,7 @@ export default function TodoList({ filter }) {
 }
 
 function readTodosFromLocal() {
-  console.log("read");
+  //console.log("read");
   const todos = localStorage.getItem("todos");
   return todos ? JSON.parse(todos) : [];
 }
