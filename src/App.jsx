@@ -30,10 +30,15 @@ function App() {
       {/* <Header filters={filters} fliter={filter} onFilterChange={setFilter} /> */}
       <AddTodo onAdd={handleAdd} />
       <div className="matrix-container">
+        <div className="category">urgent</div>
+        <div className="category">not urgent</div>
+        <div className="category"></div>
         <IU filter={filter} />
         <INU filter={filter} />
+        <div className="category vertical">important</div>
         <NIU filter={filter} />
         <NINU filter={filter} />
+        <div className="category vertical">not important</div>
       </div>
     </DarkModeProvider>
   );

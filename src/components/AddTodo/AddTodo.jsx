@@ -25,20 +25,34 @@ export default function AddTodo({ onAdd }) {
         onChange={handleChange}
       />
       <select
+        className={styles.select}
         id="important"
         onChange={(e) => setMatrix({ ...matrix, important: e.target.value })}
       >
-        <option value="">--important--</option>
-        <option value="true">true</option>
-        <option value="false">false</option>
+        <option className={styles.option} value="">
+          --important--
+        </option>
+        <option className={styles.option} value="true">
+          true
+        </option>
+        <option className={styles.option} value="false">
+          false
+        </option>
       </select>
       <select
+        className={styles.select}
         id="urgent"
         onChange={(e) => setMatrix({ ...matrix, urgent: e.target.value })}
       >
-        <option value="">--urgent--</option>
-        <option value="true">true</option>
-        <option value="false">false</option>
+        <option className={styles.option} value="">
+          --urgent--
+        </option>
+        <option className={styles.option} value="true">
+          true
+        </option>
+        <option className={styles.option} value="false">
+          false
+        </option>
       </select>
       <button className={styles.button}>Add</button>
     </form>

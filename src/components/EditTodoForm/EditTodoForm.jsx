@@ -17,7 +17,7 @@ export const EditTodoForm = ({ todo, onEdit }) => {
         type="text"
         value={value}
         onChange={(e) => setValue(e.target.value)}
-        className="todo-input"
+        className={styles.input}
         placeholder="Update task"
       />
       {/* <button type="submit" className="todo-btn">

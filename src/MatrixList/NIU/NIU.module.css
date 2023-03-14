@@ -3,7 +3,9 @@
   min-height: 0;
   display: flex;
   flex-direction: column;
-  background-color: var(--color-bg);
+  /* background-color: var(--color-bg); */
+  background-color: #92a68a;
+  border-radius: var(--radius-container);
 }
 
 .list {

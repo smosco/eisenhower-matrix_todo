@@ -10,6 +10,7 @@
 .checkbox {
   width: 1.5rem;
   height: 1.5rem;
+  margin-right: 0.5rem;
 }
 
 .text {
@@ -27,6 +28,6 @@
 }
 
 .button:hover {
-  background-color: var(--color-accent);
+  background-color: #f5dd9d;
   transform: rotate(15deg) scale(1.2);
 }

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Todo from "../../components/Todo/Todo";
-import styles from "./TodoList.module.css";
+import styles from "./IU.module.css";
 import { useTodos } from "../../context/TodosContext";
 
 export default function IU({ filter }) {
@@ -23,7 +23,6 @@ export default function IU({ filter }) {
 
   return (
     <section className={styles.container}>
-      <div>import urgent</div>
       <ul className={styles.list}>
         {iu.map((item) => (
           <Todo

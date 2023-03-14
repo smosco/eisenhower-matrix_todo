@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Todo from "../../components/Todo/Todo";
-import styles from "./TodoList.module.css";
+import styles from "./INU.module.css";
 import { useTodos } from "../../context/TodosContext";
 
 export default function INU({ filter }) {
@@ -25,7 +25,6 @@ export default function INU({ filter }) {
 
   return (
     <section className={styles.container}>
-      <div>important not urgent</div>
       <ul className={styles.list}>
         {inu.map((item) => (
           <Todo

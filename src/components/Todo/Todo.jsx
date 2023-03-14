@@ -12,6 +12,10 @@ export default function Todo({ todo, onUpdate, onDelete, onEdit }) {
 
   return (
     <li className={styles.todo}>
+      {/* <label htmlFor={id} className={styles.text}>
+        {text}
+      </label> */}
+      <EditTodoForm todo={todo} onEdit={onEdit} />
       <input
         className={styles.checkbox}
         type="checkbox"
@@ -22,10 +26,6 @@ export default function Todo({ todo, onUpdate, onDelete, onEdit }) {
           onUpdate({ ...todo, status });
         }}
       />
-      {/* <label htmlFor={id} className={styles.text}>
-        {text}
-      </label> */}
-      <EditTodoForm todo={todo} onEdit={onEdit} />
       <button onClick={handleDelete} className={styles.button}>
         <FaTrashAlt />
       </button>

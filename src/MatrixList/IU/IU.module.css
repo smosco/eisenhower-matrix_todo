@@ -1,11 +1,14 @@
 .container {
   height: 100%;
+  max-height: 200px;
   min-height: 0;
   display: flex;
+  padding: 0.5rem;
   flex-direction: column;
   /* background-color: var(--color-bg); */
-  background-color: #6d214f;
-  color: white;
+  background-color: #506266;
+  border-radius: var(--radius-container);
+  overflow-y: scrollbar;
 }
 
 .list {

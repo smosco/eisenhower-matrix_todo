@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Todo from "../../components/Todo/Todo";
-import styles from "./TodoList.module.css";
+import styles from "./NIU.module.css";
 import { useTodos } from "../../context/TodosContext";
 
 export default function NIU({ filter }) {
@@ -22,7 +22,6 @@ export default function NIU({ filter }) {
 
   return (
     <section className={styles.container}>
-      <div>not import urgent</div>
       <ul className={styles.list}>
         {niu.map((item) => (
           <Todo
