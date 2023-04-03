@@ -14,6 +14,10 @@
   color: black;
 }
 
+.input:hover {
+  border: 1px solid #eb9c4d;
+}
+
 .select {
   /* width: inherit;
   height: inherit; */
@@ -24,6 +28,7 @@
   position: relative;
   z-index: 3;
   font-size: 1rem;
+  border: 1px solid #eb9c4d;
 }
 
 .option {
